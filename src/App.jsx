@@ -3,7 +3,8 @@ import Main from "./page/Main";
 import Test from "./page/Test";
 import TestResult from './page/TestResult';
 
-export const base_url = "http://localhost:5173";
+// export const base_url = "http://localhost:5173"; //개발환경에서 사용
+export const base_url = "http://mbti.com";
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
           {/* Test Intro-Quiz-Loading Page */}
           <Route path="/:testParam" element={<Test />}></Route>
           {/* Test Result Page */}
-          <Route path="/:testParam/result/:resultParam" element={<TestResult />}></Route>
+          <Route 
+          path="/:testParam/result/:resultParam" 
+          element={<TestResult />}></Route>
       </Routes>
     </BrowserRouter> 
   )

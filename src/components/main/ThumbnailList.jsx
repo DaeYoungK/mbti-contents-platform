@@ -32,7 +32,8 @@ function ThumbnailList() {
         {/* Single Page Application */}
         {/* base_url/:testName */}
         {testList?.map((test) => (
-            <Link to={`${base_url}/${test?.info?.mainUrl}`} 
+            // <Link to={`${base_url}/${test?.info?.mainUrl}`} 
+            <Link to={`/${test?.info?.mainUrl}`} 
             key={test?.info?.mainUrl}>
             <img style={{width:"100%"}} 
                 src={test?.info?.thumbImage} 
